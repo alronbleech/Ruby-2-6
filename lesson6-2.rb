@@ -3,7 +3,8 @@ puts "何回繰り返しますか？"
 
 count = gets.to_i
 
-for count in 1..count do
+i = 1
+while i <= count do
   puts "#{count}回目の計算"
   puts "2つの値を入力してください"
 
@@ -15,10 +16,12 @@ for count in 1..count do
 
   puts = "計算結果を出力します"
 
-  calculations = ["#{a}+#{b}=#{a + b}","#{a}-#{b}=#{a - b}","#{a}*#{b}=#{a * b}","#{a}/#{b}=#{a / b}"]
-  calculations.each do |calculation|
-    puts calculation
-  end
+  puts "#{a}+#{b}=#{a + b}"
+  puts "#{a}-#{b}=#{a - b}"
+  puts "#{a}*#{b}=#{a * b}"
+  puts "#{a}/#{b}=#{a / b}"
+
+  i += 1
 end
 
 puts "計算を終了します"
